@@ -29,6 +29,7 @@
     .header-container {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
         margin: 0 auto;
         max-width: 1000px;
     }
@@ -59,5 +60,11 @@
 
     .router-link-active {
         text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+        .header-container {
+            align-items: center;
+        } 
     }
 </style>

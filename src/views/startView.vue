@@ -18,11 +18,14 @@
 <style scoped>
     .banner-container {
         position: relative;
+        width: 100%;
+        max-height: 350px;
+        overflow: hidden;
     }
 
     .banner {
         width: 100%;
-        max-height: 350px;
+        height: 100%;
         object-fit: cover;
         display: block;
     }
@@ -38,13 +41,14 @@
         max-width: 900px;
         margin: 20px auto;
         padding: 20px;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
     h2 {
         font-size: 1.2em;
-        margin-left: 130px;
     }
 
     p {
@@ -52,5 +56,16 @@
         line-height: 1.5em;
         max-width: 40em;
         margin: 0 auto;
+    }
+
+    @media (max-width: 600px) {
+        h2 {
+            font-size: 1.3em;
+        }
+
+        p {
+            font-size: 1.1em;
+            padding: 0 10px;
+        }
     }
 </style>
