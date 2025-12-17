@@ -16,11 +16,13 @@
         </tbody>
     </table>
 </section>
+<AddBook @book-added="getBooks" />
 </template>
 
 <!--importerar bookitem samt hämtar data dynamiskt från min REST-webbtjänst-->
 <script setup>
     import BookItem from '@/components/BookItem.vue';
+    import AddBook from '@/components/AddBook.vue';
     import { ref, onMounted } from 'vue';
 
     const books = ref([])
