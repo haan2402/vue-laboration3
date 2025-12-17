@@ -1,3 +1,4 @@
+<!--header med de olika menyvalen för sidorna-->
 <template>
     <header>
         <div class="header-container">
@@ -17,6 +18,7 @@
     import { RouterLink } from 'vue-router';
 </script>
 
+<!--styling för header-->
 <style scoped>
     header {
         background-color: #494949;

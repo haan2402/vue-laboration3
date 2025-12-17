@@ -1,3 +1,4 @@
+<!--sidfoten för sidorna-->
 <template>
     <footer>
         <p>&copy; Bok listan</p>
@@ -5,6 +6,7 @@
     </footer>
 </template>
 
+<!--styling för sidfot-->
 <style scoped>
     footer {
         background-color: #494949;

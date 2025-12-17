@@ -1,3 +1,4 @@
+<!--startsidan-->
 <template>
     <div class="banner-container">
     <img src="../assets/bookshelf.jpg" alt="bokhylla med fler hyllor med böcker i olika färger" class="banner"></img>
@@ -13,6 +14,7 @@
     </section>
 </template>
 
+<!--styling för start sidan-->
 <style scoped>
     .banner-container {
         position: relative;
