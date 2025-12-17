@@ -1,6 +1,6 @@
 <!--boksidan med tabell och formulär-->
 <template>
-    <section>
+    <section class="book-container">
     <h2>Mina böcker</h2>
     <table>
         <thead>
@@ -61,3 +61,40 @@
         }
     }
 </script>
+
+<!--styling för tabell-->
+<style scoped>
+    .book-container { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #ECF4E8;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        border-radius: 20px;
+    }
+
+    h2 {
+        margin-bottom: 10px;
+        font-size: 1.5em;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        background-color: white;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    th {
+        padding: 12px 15px;
+        text-align: left;
+        font-weight: 700;
+    }
+
+</style>

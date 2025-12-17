@@ -12,7 +12,7 @@
         
 </template>
 
-<!--definierar props-->
+<!--definierar props, och emits-->
 <script setup>
     const props = defineProps({
         book: Object
@@ -35,5 +35,11 @@
 
     button:hover {
         background-color: rgb(216, 0, 0);
+    }
+
+    td {
+        border-bottom: 2px solid #ccc;
+        padding: 8px 12px;
+        text-align: left;
     }
 </style>
