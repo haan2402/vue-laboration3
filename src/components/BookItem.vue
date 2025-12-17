@@ -6,7 +6,7 @@
         <td>{{ book.year }}</td>
         <td>{{ book.read ? 'Ja' : 'Nej' }}</td>
         <td>
-            <button>Radera</button>
+            <button @click="$emit('deleteBook', book._id)">Radera</button>
         </td>
     </tr>
         
@@ -17,6 +17,8 @@
     const props = defineProps({
         book: Object
     })
+
+    const emits = defineEmits(['deleteBook'])
 </script>
 
 <!--styling radera knapp-->

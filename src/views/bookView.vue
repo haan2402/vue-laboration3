@@ -12,7 +12,7 @@
             </tr>
         </thead>
         <tbody>
-            <BookItem v-for="book in books" :book="book" :key="book._id"/>
+            <BookItem v-for="book in books" :book="book" :key="book._id" @delete-book="deleteBook"/>
         </tbody>
     </table>
 </section>
@@ -39,6 +39,22 @@
                 books.value = data;
             }
         } catch(error) {
+            console.log("Något blev fel:" + error);
+        }
+    }
+
+    //funktion för att radera en bok från tabellen
+    const deleteBook = async (id) => {
+        try {
+            const res = await fetch('http://localhost:3000/books/' + id, {
+                method: "DELETE"
+            });
+
+            if(res.ok) {
+                getBooks();
+            }
+
+        } catch (error){
             console.log("Något blev fel:" + error);
         }
     }
