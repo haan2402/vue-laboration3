@@ -33,9 +33,13 @@
         max-width: 1000px;
     }
 
+    h1 {
+        font-size: 1.5em;
+    }
+
     ul {
         display: flex;
-        font-size: 1.5em;
+        font-size: 1.3em;
         font-weight: bold;
         list-style: none;
     }
