@@ -42,4 +42,15 @@
         padding: 8px 12px;
         text-align: left;
     }
+
+    @media (max-width: 600px) {
+        button {
+            font-size: 0.9em;
+            padding: 5px 8px;
+        }
+
+        td {
+            border-right: 2px solid #ccc;
+        }
+    }
 </style>

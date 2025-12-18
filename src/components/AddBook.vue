@@ -149,4 +149,11 @@
         text-align: center;
         margin-top: 10px;
     }
+
+    @media (max-width: 600px) {
+        form {
+            max-width: 400px;
+            font-size: 0.9em;
+        }
+    }
 </style>

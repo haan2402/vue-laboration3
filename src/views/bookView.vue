@@ -1,6 +1,7 @@
 <!--boksidan med tabell och formulär-->
 <template>
     <section class="book-container">
+    <div class="book-layout">
     <h2>Mina böcker</h2>
     <table>
         <thead>
@@ -15,6 +16,7 @@
             <BookItem v-for="book in books" :book="book" :key="book._id" @delete-book="deleteBook"/>
         </tbody>
     </table>
+    </div>
 </section>
 <AddBook @book-added="getBooks" />
 </template>
@@ -64,6 +66,12 @@
 
 <!--styling för tabell-->
 <style scoped>
+    .book-layout{
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .book-container { 
         display: flex;
         flex-direction: column;
@@ -95,6 +103,20 @@
         padding: 12px 15px;
         text-align: left;
         font-weight: 700;
+    }
+
+    @media (max-width: 600px) {
+        .book-layout {
+            flex-direction: column;
+            gap: 10px;
+            padding: 0 10px;
+        }
+
+        .book-container {
+            max-width: 400px;
+            padding: 10px;
+            font-size: 0.9em;
+        }
     }
 
 </style>
