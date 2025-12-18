@@ -42,7 +42,16 @@
     p {
         font-size: 1em;
         line-height: 1.5em;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+        max-width: 40em;
+    }
+
+    @media (max-width: 600px) {
+        .info-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 10px;
+        }
     }
     
 </style>
